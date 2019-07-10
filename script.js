@@ -10,3 +10,11 @@ function compareGuesses(humanGuess, computerGuess, targetNumber) {
 	const computerOffBy = Math.abs(targetNumber - computerGuess);
 	return (humanOffBy <= computerOffBy);
 }
+
+function updateScore(winner) {
+	if (winner === 'human') {
+		humanScore++;
+	} else if (winner === 'computer') {
+		computerScore++;
+	}
+}
